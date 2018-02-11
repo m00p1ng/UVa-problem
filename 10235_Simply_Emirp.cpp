@@ -6,8 +6,10 @@ void gen_prime() {
     prime[0] = prime[1] = true;
 
     for(int i = 2; i <= 1e6; i++) {
-        for(int j = 2; i*j <= 1e6; j++) {
-            prime[i*j] = true;
+        if(!prime[i]) {
+            for(int j = 2; i*j <= 1e6; j++) {
+                prime[i*j] = true;
+            }
         }
     }
 }
