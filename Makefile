@@ -15,7 +15,7 @@ case:
 	~/.dotfile/command/ctest.py ${file} diff case ${number}
 clean:
 	[ -f a.out ] && rm a.out || echo "a.out not found"
-	[ -f Main.class ] && Main.class || echo "main.class not found"
+	[ -f Main.class ] && rm Main.class || echo "main.class not found"
 move:
 	mv *.cpp finish-problem/
 mv:
