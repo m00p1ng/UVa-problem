@@ -2,10 +2,6 @@
 #include <cstring>
 #include <cctype>
 
-int max(int a, int b) {
-    return a > b ? a : b;
-}
-
 int count_len(char *s) {
     int cnt = 0;
     int len = strlen(s);
